@@ -1,0 +1,41 @@
+.file-box {
+    border: 2px solid #ccc; /* 테두리 추가 */
+    margin: -2px 0px 0px 0px;
+    padding: 10px 0px 0px 10px;
+    height: auto;
+    width: auto; /* 최대 너비 설정 */
+}
+
+.content-box {
+    width: 100%; /* 부모 요소를 가득 채움 */
+    padding: 10px; /* 적절한 여백 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    word-wrap: break-word; /* 긴 단어를 줄바꿈 */
+    display: block; /* 블록 요소 */
+    overflow: hidden; /* 넘침 숨김 */
+    max-width: 100%; /* 화면 크기를 초과하지 않음 */
+    height: auto; /* 내용물에 따라 높이 자동 조정 */
+    min-height: 200px; /* 최소 높이 설정 (필요한 경우 조정 가능) */
+    position: relative; /* 이미지 위치 제한 */
+    background-color: #fff; /* 배경색 설정 (가독성 개선) */
+}
+
+
+.bbs-detail-container {
+    display: flex;
+    flex-direction: column; /* 자식 요소를 위에서 아래로 배치 */
+    align-items: stretch; /* 자식 요소를 부모에 맞춤 */
+    width: 100%; /* 화면 너비에 맞춤 */
+    max-width: 1200px; /* 최대 너비 제한 */
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 20px; /* 여백 추가 */
+    overflow: visible; /* 넘치는 내용 표시 */
+}
+
+.bbs-image {
+    max-width: 100%; /* 부모 요소를 넘지 않음 */
+    height: auto; /* 비율 유지 */
+    margin-bottom: 10px; /* 이미지 간격 */
+    display: block; /* 블록으로 표시 */
+    object-fit: contain; /* 이미지를 비율에 맞게 조정 */
+}
